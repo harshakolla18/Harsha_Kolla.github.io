@@ -3,7 +3,7 @@ name: My Workflow  # Optional name for your workflow
 on:
   push:  # Triggers the workflow on specific events, such as a push
     branches:
-      - main  # Runs on pushes to the 'main' branch
+      - harshakolla18-patch-1  # Runs on pushes to the 'main' branch
 
 jobs:
   build:  # Defines a job called 'build'
