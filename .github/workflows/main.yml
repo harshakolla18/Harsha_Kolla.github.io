@@ -1,0 +1,22 @@
+name: My Workflow  # Optional name for your workflow
+
+on:
+  push:  # Triggers the workflow on specific events, such as a push
+    branches:
+      - main  # Runs on pushes to the 'main' branch
+
+jobs:
+  build:  # Defines a job called 'build'
+    runs-on: ubuntu-latest  # Specifies the virtual environment (OS) for the job
+
+    steps:
+      - name: Checkout code  # Step name
+        uses: actions/checkout@v2  # GitHub action to check out code
+
+      - name: Run a script  # Another step to run a script
+        run: echo "Hello, world!"  # Command to run in the job
+
+      - name: Printing Variables
+        run: |
+          echo "${{ vars.TEST_VARIABLE }}"
+    
